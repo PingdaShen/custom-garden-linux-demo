@@ -3,7 +3,7 @@ FROM debian:stable-slim
 # install linux kernel build and complie tools
 RUN apt-get update && apt-get install -y \
     build-essential \
-    linux-headers-$(uname -r) \
+    linux-headers-amd64 \
     make \
     gcc \
     && rm -rf /var/lib/apt/lists/*
